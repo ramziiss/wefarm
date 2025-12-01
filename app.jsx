@@ -1,6 +1,3 @@
-import React, { useState, useMemo } from 'react';
-import { RefreshCw, TrendingUp, DollarSign, Sprout, Factory, Users, Landmark } from 'lucide-react';
-
 const FinancialModel = () => {
   // --- 1. MASTER ASSUMPTIONS (Detailed) ---
   const defaultAssumptions = {
@@ -519,4 +516,5 @@ const FinancialModel = () => {
   );
 };
 
-export default FinancialModel;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<FinancialModel />);
